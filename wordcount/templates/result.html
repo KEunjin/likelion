@@ -1,0 +1,12 @@
+<h1> TOTAL WORD NUMBER : {{total}} </h1>
+
+<a href = "{%url 'home'%}">RETURN</a>
+<br>
+<h2> YOUR TEXT : </h2>
+{{full}}
+
+<h2> WORD COUNT : </h2>
+{% for word, howmany in dictionary%}
+{{word}} : {{howmany}}
+<br>
+{%endfor%}
